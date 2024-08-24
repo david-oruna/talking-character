@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+#main {
+    font-family: "Source Code Pro", monospace;
+    background-color: black;
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+
+
+#simon-rat {
+    display: flex;
+    gap: 80px;
+}
+
+#simon-rat {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+#open-box {
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+#box-container {
+    
+    margin-top: 30px;
+}
+
+#open-box:hover {
+    transform: scale(1.1);
+}
+
+#cat-name {
+    padding: 10px; 
+    font-size: 1.2em;
+    font-weight: 200;
+    background-color: antiquewhite;
+    border-radius: 15px;
+    border: none;
+    text-align: center;
+    width: 60%; /* Ensures it takes up the full width of the container */
+    box-sizing: border-box; /* Ensures padding doesn't affect the total width */
+    margin-bottom: 10px; /* Adds some space below the input */
+    outline: none; /* Removes the default focus outline */
+}
+
+.typewriter {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#typing-container {
+    min-height: 50px;
+    max-width: 80%; /* Set a maximum width to prevent it from expanding too much */
+    overflow: hidden;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+
+
+#select {
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+    justify-content: center; /* Ensure buttons stay centered */
+    position: relative;
+}
+
+.btn {
+    padding: 10px;
+
+    font-size: 1.1em;
+    background-color: antiquewhite;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    width: 80px;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+#confirm-name {
+    padding: 7px;
+    font-size: 1.2em;
+    background-color: rgb(124, 124, 124);
+    border-radius: 15px;
+}
+
+#cat-name:focus {
+    border: 2px solid #333; /* Adds a border when the input is focused */
+}
+
+#bola img {
+    max-width: 200px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+#bola img:hover {
+    transform: scale(1.1);
+}
+
+#smash-image, #additional-image, #cat, #sleeping-cat, #box-closed, #box-opened, #funny-img {
+    width: 300px;
+    transition: width 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+
+#funny-img {
+    width: 200px;
+
+}
+
+
+#smash-image {
+    width: 300px;
+    position: relative;
+    transform: translateX(100%); /* Start off-screen to the right */
+    opacity: 0; /* Make it invisible initially */
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Smooth animation */
+}
+
+#smash-image.show {
+    transform: translateX(0); /* Move it into view */
+    opacity: 1; /* Make it fully visible */
+}
+
+.smash {
+    animation: squish 0.3s ease-in-out;
+}
+
+@keyframes squish {
+    0% { transform: scale(1, 1); }
+    50% { transform: scale(1.2, 0.8); }
+    70% { transform: scale(0.9, 1.1); }
+    100% { transform: scale(1, 1); }
+}
+
+@keyframes disappear {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(0); opacity: 0; }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-10px); }
+    40%, 80% { transform: translateX(10px); }
+}
+
+#open-box {
+    margin-top: 10px;
+}
+
+#name-container {
+    margin-top: 20px;
+}
+
+
+
+
+@keyframes fall {
+    0% { transform: translateY(-200px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateY(0); }
+    20%, 60% { transform: translateY(-5px); }
+    40%, 80% { transform: translateY(5px); }
+}
+
+.shake {
+    animation: shake 0.3s ease-in-out infinite;
+}
+
+
+@keyframes jump {
+    0% { transform: translateY(0); }
+    30% { transform: translateY(-20px); } /* Jump up */
+    50% { transform: translateY(0); } /* Land back */
+    70% { transform: translateY(-10px); } /* Small bounce */
+    100% { transform: translateY(0); }
+}
+
+.jump {
+    animation: jump 0.5s ease-in-out;
+}
