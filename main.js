@@ -156,7 +156,7 @@ document.getElementById("confirm-name").onclick = function() {
     document.getElementById("funny-img").style.display='none';
 
     document.getElementById("cheems").style.display='none';
-    s4 =["I hoped you enjoyed this game", "Thanks for playing<3" ]
+    s4 =["I hoped you enjoyed this", "Thanks for playing<3" ]
 
     typeWriter(s4, 60, delayBetween, function(){
         document.getElementById("typing-container").textContent =  "Thanks for playing<3" ;

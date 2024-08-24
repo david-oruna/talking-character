@@ -14,8 +14,6 @@
     outline: none;
 }
 
-
-
 #simon-rat {
     display: flex;
     gap: 80px;
@@ -27,17 +25,13 @@
     justify-content: space-between;
 }
 
-
 #open-box {
     cursor: pointer;
     text-align: center;
     transition: transform 0.3s ease-in-out;
 }
 
-
-
 #box-container {
-    
     margin-top: 30px;
 }
 
@@ -45,7 +39,7 @@
     transform: scale(1.1);
 }
 
-#cat-name {
+#cheems-name {
     padding: 10px; 
     font-size: 1.2em;
     font-weight: 200;
@@ -53,10 +47,10 @@
     border-radius: 15px;
     border: none;
     text-align: center;
-    width: 60%; /* Ensures it takes up the full width of the container */
-    box-sizing: border-box; /* Ensures padding doesn't affect the total width */
-    margin-bottom: 10px; /* Adds some space below the input */
-    outline: none; /* Removes the default focus outline */
+    width: 60%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    outline: none;
 }
 
 .typewriter {
@@ -66,28 +60,24 @@
     flex-direction: column;
 }
 
-
 #typing-container {
     min-height: 50px;
-    max-width: 80%; /* Set a maximum width to prevent it from expanding too much */
+    max-width: 80%;
     overflow: hidden;
     text-align: center;
     word-wrap: break-word;
 }
 
-
-
 #select {
     margin-top: 20px;
     display: flex;
     gap: 30px;
-    justify-content: center; /* Ensure buttons stay centered */
+    justify-content: center;
     position: relative;
 }
 
 .btn {
     padding: 10px;
-
     font-size: 1.1em;
     background-color: antiquewhite;
     border-radius: 15px;
@@ -108,8 +98,8 @@
     border-radius: 15px;
 }
 
-#cat-name:focus {
-    border: 2px solid #333; /* Adds a border when the input is focused */
+#cheems-name:focus {
+    border: 2px solid #333;
 }
 
 #bola img {
@@ -122,28 +112,26 @@
     transform: scale(1.1);
 }
 
-#smash-image, #additional-image, #cat, #sleeping-cat, #box-closed, #box-opened, #funny-img {
+#smash-image, #additional-image, #cheems, #cheems, #box-closed, #box-opened, #funny-img {
     width: 300px;
     transition: width 0.1s ease-in-out, transform 0.1s ease-in-out;
 }
 
 #funny-img {
     width: 200px;
-
 }
-
 
 #smash-image {
     width: 300px;
     position: relative;
-    transform: translateX(100%); /* Start off-screen to the right */
-    opacity: 0; /* Make it invisible initially */
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Smooth animation */
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 #smash-image.show {
-    transform: translateX(0); /* Move it into view */
-    opacity: 1; /* Make it fully visible */
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .smash {
@@ -176,9 +164,6 @@
     margin-top: 20px;
 }
 
-
-
-
 @keyframes fall {
     0% { transform: translateY(-200px); }
     100% { transform: translateY(0); }
@@ -194,12 +179,11 @@
     animation: shake 0.3s ease-in-out infinite;
 }
 
-
 @keyframes jump {
     0% { transform: translateY(0); }
-    30% { transform: translateY(-20px); } /* Jump up */
-    50% { transform: translateY(0); } /* Land back */
-    70% { transform: translateY(-10px); } /* Small bounce */
+    30% { transform: translateY(-20px); }
+    50% { transform: translateY(0); }
+    70% { transform: translateY(-10px); }
     100% { transform: translateY(0); }
 }
 
